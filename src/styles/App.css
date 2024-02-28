@@ -1,0 +1,20 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% de la hauteur de la vue */
+  }
+  
+  .centered-image {
+    max-width: 100%;
+    max-height: 80vh; /* 80% de la hauteur de la vue pour l'image */
+    margin-bottom: 20px;
+  }
+  
+  .coming-soon-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: #000000;
+  }
+  
