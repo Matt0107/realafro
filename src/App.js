@@ -1,14 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import "./styles/App.css";
-const App = () => (
-  <div className="app-container">
-    <img
-      className="centered-image"
-      src={require("./assets/Afrotennis_logos_Afrotennis_blason_logo_black.jpg")}
-      alt="Image d'accueil"
-    />
-    <p className="coming-soon-text">Coming Soon</p>
-  </div>
-);
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Podcast from "./pages/Podcast";
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Podcast" element={<Podcast />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 export default App;
